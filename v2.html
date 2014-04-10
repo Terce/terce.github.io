@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Prescriptions</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
+  </script>
+  
+</head>
+    <style type="text/css">
+    .head{
+		background-color:#0080FF;
+		position:fixed;
+		width:100%;
+		height:100px;
+		padding:20px;
+		color:#FFFFFF;
+		z-index:1;
+		opacity: .90;		
+	}
+	
+	.p{
+		position:absolute;
+		top:140px;
+		left:40%;
+	}
+	.titlebox{
+		color:#0080FF;
+		text-decoration:underline;
+	}
+	.col-lg-9{
+		text-align: center;
+	}
+	$('#myModal').modal(options);
+
+	</style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="head">
+	    <h1>Online Prescriptions</h1>
+	</div>
+	<div id="container">
+		<div class="p">
+			<div class="row">
+				
+				<div class="col-lg-9">
+					<img src="pills.jpg" height="320" width="200">
+					<form class="form-horizontal" role="form">
+	  					<div class="form-group">
+	    					<label for="inputEmail3" class="col-sm-2 control-label"></label>
+	    					<div class="col-sm-10">
+	     						<input type="email" class="form-control" id="inputEmail3" placeholder="User Name">
+	    					</div>
+	  					</div>
+	  					<div class="form-group">
+	    					<label for="inputPassword3" class="col-sm-2 control-label"></label>
+	    					<div class="col-sm-10">
+	     						<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+	    					</div>
+	  					</div>
+						  <div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+						    </div>
+						  </div>
+					</form>
+					<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Log-In</button>
+				</div>
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  					<div class="modal-dialog modal-lg">
+   					 <div class="modal-content">
+   					 	<h1 class="titlebox">Diagnose:</h1>
+					<p>
+						Lucy is a 34-year old single mother who has recently been diagnosed 
+						with a cranial tumour in the right frontal lobe. The diagnosis explains 
+						her symptoms of persistent and worsening headache over the last four weeks, 
+						which have led her to resign from work and rely more on her mother for support 
+						and care. 
+					</p>	
+					<p>
+						Lucy has also experienced symptoms of increased intracranial pressure, 
+						such as nausea, vomiting, and mild photophobia. Hence, it is likely that the tumour 
+						is a space-occupying lesion, which is exerting the oedema effect and causing the 
+						symptoms that Lucy is experiencing.
+					</p>
+					<p>
+						Taking her age and sex into consideration, 
+						the lesion is most likely to be a primary lesion, single and benign in nature. 
+						In addition, given that Lucy's father died 15 years ago of stroke related causes, 
+						her mother and her sister both have cardiovascular illness, and Lucy has HERNS syndrome, 
+						there is a high probability that the tumour has a vascular cause.
+					</p>
+					<h1 class="titlebox">Treatment:</h1>
+					<p>Date: March 9, 2009</p>
+
+					<p>Name: Emily Watson Age: 27</p>
+					<p>Address : 2459 N. Harbor Ave. San Diego, CA 92126 D.O.B: January 24, 1981</p> 
+
+					<p>Rx: Doxycycline 100 mg</p>
+					<p>Disp: #14</p>
+					<p>Sig: Take 1 capsule bid x 7 days</p>
+
+					<p>Refills: 0 Substitution Permissible</p>
+					<p>( note: if premade RX form denotes 0,1,2,3 you can cross out all but desired # to make difficult to alter.)</p>
+					<p>Dr. Jane Smith</p>
+					<p>DEA #: AN12543</p>
+   					 </div>
+  					</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  </body>
+</html>
