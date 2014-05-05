@@ -2,7 +2,7 @@ app.controller("MainController", function($scope){
 		$scope.people = [
 			{
 				id: 0,
-				name: 'Lycy Watson',
+				name: 'Lucy Watson',
 				live: true
 			},
 			{
