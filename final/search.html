@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Prescriptions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+	<script src="maincontroller.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!--no se si funcione-->
+
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+
+    <meta name="viewport" content="width=1200, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+    img {max-width: 200%;}
+	    .head{
+			background-color:#269ABC;
+			position:relative;
+			width:101.1%;
+			height:10%;
+		}
+		.p{
+			position:absolute;
+			padding-top:5%;
+			padding-left:15%;
+		}
+		.imagen{
+			padding-top: 30px;
+			img { max-width: 100%; }
+		}
+		.next{
+			padding-top: 1%;
+			padding-left: 30%;
+			padding-right: 30%;
+			text-align:center;
+		}
+		
+		.image{
+			padding-top: 60px;
+			padding-left: 30px;
+			img { max-width: 100%; }
+		}
+		
+		.h5{
+			padding:2%;
+			border-right-style:solid;
+			border-left-style:solid;
+		}
+		.astext {
+			color: #190707;
+		    background:none;
+		    border:none;
+		    margin:0;
+		    padding:0;
+		}
+		.titlebox{
+			color:#269ABC;
+			text-decoration:underline;
+		}
+		
+		#site {
+			position: relative;
+			overflow-x: hidden;
+		}
+		#contenedor{
+			padding-left:1.1%
+		}
+		
+	</style>
+  <meta name="viewport" content="width=1000,device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+  </head>
+  
+  <body id="site">
+    <div id='content' ng-app='MyApp' ng-controller='MainController'>
+	    <div class="head" id="site">
+	    	
+    		<div class="row" id="contenedor">
+			  <div class="col-xs-6 col-sm-3"><h1>Online Prescriptions</h1></div>
+			  <div class="col-xs-6 col-sm-6"></div>
+			  <div class="col-xs-2 col-sm-1"><center><div class="h5"><a href="http://terce.github.io/final/About.html" type="button" class="astext"><h5>Contact Us</h5></a></div></center></div>
+			  <div class="col-xs-2 col-sm-1"><center><div class="h5"><a href="http://terce.github.io" type="button" class="astext"><h5>About the App</h5></a></div></center></div>
+			</div>
+  		</div>
+		
+		<div class="p">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10">
+						<input type="text" class="form-control" placeholder= "Search"  ng-model='searchText'/>
+						<div class="panel panel-primary">
+							<div class="panel-heading">Results:</div>
+							<div class="panel-body">
+							<ul>
+								<li ng-repeat='person in people | filter:searchText' ng-show='person.live == true'>
+									<a href="farmacia1.html" type="button" class="astext"><img src="users.png" height="10%" width="10%">Lucy Watson</button>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
