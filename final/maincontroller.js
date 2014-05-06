@@ -2,7 +2,7 @@ app.controller("MainController", function($scope){
 		$scope.people = [
 			{
 				id: 0,
-				name: 'Lucy Watson',
+				name: 'Daryl Dixon',
 				live: true
 			},
 			{
@@ -12,14 +12,25 @@ app.controller("MainController", function($scope){
 			},
 			{
 				id: 2,
-				name: 'Harry Potter',
+				name: 'Lucy Watson',
 				live: true
 			},
 			{
 				id: 3,
-				name: 'Allyce Beasley',
+				name: 'Luke Skywalker',
 				live: true
 			}
 		];
+		
+		$scope.newPerson = null;
+	    $scope.addNew = function() {
+	        if ($scope.newPerson != null && $scope.newPerson != "") {
+	            $scope.people.push({
+	                id: $scope.people.length,
+	                name: $scope.newPerson,
+	                live: true,
+	            });
+	        }
+	    }
 		
 });
