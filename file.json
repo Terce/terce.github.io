@@ -1,5 +1,5 @@
 [
-        {"Seccion": "1", "Lugares": "17"},
-        {"Seccion": "2", "Lugares": "0"},
-        {"Seccion": "3", "Lugares": "6"}
+        {"Section": "1", "Space": "17"},
+        {"Section": "2", "Space": "0"},
+        {"Section": "3", "Space": "6"}
 ]
